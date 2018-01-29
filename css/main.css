@@ -1,0 +1,152 @@
+#body {
+
+}
+#text {
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: grey;
+  border-radius: 22px solid white;
+}
+
+.robot {
+  position: relative;
+  left: 650px;
+  top: 50px;
+}
+
+.beep {
+  width: 5px;
+  height: 0;
+  border: 5px solid transparent;
+  border-top: 10px solid #777;
+  border-bottom: 80px solid #888;
+  position: relative;
+  left: 130px;
+}
+
+.flash {
+    margin-top: 7%;
+    margin-left: 35%;
+   text-decoration: none;
+   text-transform: uppercase;
+   padding: 6px 24px 10px;
+   background-color: #fff;
+   color: grey;
+   border: 2px solid grey;
+   border-radius: 6px;
+   margin-bottom: 16px;
+   transition: all .5s ease;
+}
+
+.color {
+  margin-top: 7%;
+  margin-left: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 6px 24px 10px;
+  background-color: #fff;
+  color: grey;
+  border: 2px solid grey;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  transition: all .5s ease;
+}
+
+/* Effect */
+.flash:hover {
+  cursor: pointer;
+  background-color: grey;
+  color: white;
+  border-color: grey;
+}
+
+.color:hover {
+  cursor: pointer;
+  background-color: grey;
+  color: white;
+  border-color: grey;
+}
+
+@keyframes blink {
+  50% {
+    background: radial-gradient(circle, red 15%, transparent 40%), #5AB4D9;
+    background-size: 75px 150px;
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    background: -webkit-radial-gradient(circle, red 15%, transparent 40%), #5AB4D9;
+  }
+}
+@-moz-keyframes blink {
+  50% {
+    background: -moz-radial-gradient(circle, red 15%, transparent 40%), #5AB4D9;
+  }
+}
+.laser {
+  animation: blink .9s infinite;
+  -webkit-animation: blink .9s infinite;
+  -moz-animation: blink .9s infinite;
+}
+.brain {
+  background: radial-gradient(circle, white 15%, transparent 40%), #5AB4D9;
+  background: -moz-radial-gradient(circle, white 15%, transparent 40%), #5AB4D9;
+  background: -webkit-radial-gradient(circle, white 15%, transparent 40%), #5AB4D9;
+  background-size: 75px 150px;
+  height: 190px;
+  width: 150px;
+  border-radius: 60px 60px 10px 10px;
+  border-bottom: 40px solid #666;
+  position: relative;
+  left: 60px;
+}
+.torso {
+  height: 0;
+  width: 270px;
+  border-top: 300px solid #48A2C6;
+  border-left: 75px solid transparent;
+  border-right: 75px solid transparent;
+  border-radius: 20px 20px 100px 100px;
+}
+
+.left {
+  font-family: 'Poller One', verdana, arial, sans-serif;
+  font-size: 250px;
+  color: #666;
+  transform: rotate(200deg);
+  -webkit-transform: rotate(200deg);
+  -moz-transform: rotate(200deg);
+  position: relative;
+  top: -360px;
+  left: -187px;
+  z-index: -1;
+}
+.right {
+  font-family: 'Poller One', verdana, arial, sans-serif;
+  font-size: 250px;
+  color: #666;
+  transform: scaleY(-1) rotate(20deg);
+  -webkit-transform: scaleY(-1) rotate(20deg);
+  -moz-transform: scaleY(-1) rotate(20deg);
+  position: relative;
+  top: -735px;
+  left: 182px;
+  z-index: -1;
+}
+.foot {
+  height: 70px;
+  width: 70px;
+  background: #ccc;
+  border-radius: 40px;
+  border: 18px solid #999;
+  position: relative;
+  left: 100px;
+  top: -5px;
+  z-index: -1;
+}
+
+iframe {
+  visibility: hidden;
+  position: absolute;
+}
