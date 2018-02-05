@@ -5,8 +5,8 @@
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  color: grey;
-  border-radius: 22px solid white;
+  -webkit-text-stroke: 1px grey;
+  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
 }
 
 .robot {
@@ -20,7 +20,7 @@
   height: 0;
   border: 5px solid transparent;
   border-top: 10px solid #777;
-  border-bottom: 80px solid #888;
+  border-bottom: 60px solid #888;
   position: relative;
   left: 130px;
 }
@@ -70,18 +70,18 @@
 
 @keyframes blink {
   50% {
-    background: radial-gradient(circle, red 15%, transparent 40%), #5AB4D9;
+    background: radial-gradient(circle, red 15%, transparent 40%), #ddd;
     background-size: 75px 150px;
   }
 }
 @-webkit-keyframes blink {
   50% {
-    background: -webkit-radial-gradient(circle, red 15%, transparent 40%), #5AB4D9;
+    background: -webkit-radial-gradient(circle, red 15%, transparent 40%), #ddd;
   }
 }
 @-moz-keyframes blink {
   50% {
-    background: -moz-radial-gradient(circle, red 15%, transparent 40%), #5AB4D9;
+    background: -moz-radial-gradient(circle, red 15%, transparent 40%), #ddd;
   }
 }
 .laser {
@@ -90,11 +90,11 @@
   -moz-animation: blink .9s infinite;
 }
 .brain {
-  background: radial-gradient(circle, white 15%, transparent 40%), #5AB4D9;
-  background: -moz-radial-gradient(circle, white 15%, transparent 40%), #5AB4D9;
-  background: -webkit-radial-gradient(circle, white 15%, transparent 40%), #5AB4D9;
+  background: radial-gradient(circle, white 15%, transparent 40%), lightgrey;
+  background: -moz-radial-gradient(circle, white 15%, transparent 40%), lightgrey;
+  background: -webkit-radial-gradient(circle, white 15%, transparent 40%), #ddd;
   background-size: 75px 150px;
-  height: 190px;
+  height: 170px;
   width: 150px;
   border-radius: 60px 60px 10px 10px;
   border-bottom: 40px solid #666;
@@ -103,50 +103,51 @@
 }
 .torso {
   height: 0;
-  width: 270px;
-  border-top: 300px solid #48A2C6;
-  border-left: 75px solid transparent;
-  border-right: 75px solid transparent;
-  border-radius: 20px 20px 100px 100px;
+  width: 260px;
+  border-top: 250px solid #CCC;
+  border-left: 50px solid transparent;
+  border-right: 48px solid transparent;
+  border-radius: 20px 20px 75px 75px;
 }
 
 .left {
   font-family: 'Poller One', verdana, arial, sans-serif;
-  font-size: 250px;
+  font-size: 225px;
   color: #666;
   transform: rotate(200deg);
   -webkit-transform: rotate(200deg);
   -moz-transform: rotate(200deg);
   position: relative;
-  top: -360px;
+  top: -312px;
   left: -187px;
   z-index: -1;
 }
 .right {
   font-family: 'Poller One', verdana, arial, sans-serif;
-  font-size: 250px;
+  font-size: 225px;
   color: #666;
   transform: scaleY(-1) rotate(20deg);
   -webkit-transform: scaleY(-1) rotate(20deg);
   -moz-transform: scaleY(-1) rotate(20deg);
   position: relative;
-  top: -735px;
+  top: -650px;
   left: 182px;
   z-index: -1;
 }
 .foot {
-  height: 70px;
-  width: 70px;
-  background: #ccc;
+  height: 80px;
+  width: 80px;
+  background: #ddd;
   border-radius: 40px;
-  border: 18px solid #999;
+  border: 20px solid #999;
   position: relative;
-  left: 100px;
-  top: -5px;
+  left: 95px;
+  top: -18px;
   z-index: -1;
 }
 
 iframe {
-  visibility: hidden;
-  position: absolute;
+  /*visibility: hidden;
+  position: absolute;*/
+  bottom: 0;
 }
