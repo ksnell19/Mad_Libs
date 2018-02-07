@@ -16,13 +16,13 @@
 }
 
 .beep {
-  width: 5px;
+  width: 10px;
   height: 0;
   border: 5px solid transparent;
   border-top: 10px solid #777;
-  border-bottom: 60px solid #888;
+  border-bottom: 50px solid #888;
   position: relative;
-  left: 130px;
+  left: 125px;
 }
 
 .flash {
@@ -53,6 +53,20 @@
   transition: all .5s ease;
 }
 
+.dance {
+  margin-top: 7%;
+  margin-left: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 6px 24px 10px;
+  background-color: #fff;
+  color: grey;
+  border: 2px solid grey;
+  border-radius: 6px;
+  margin-bottom: 16px;
+  transition: all .5s ease;
+}
+
 /* Effect */
 .flash:hover {
   cursor: pointer;
@@ -68,20 +82,27 @@
   border-color: grey;
 }
 
+.dance:hover {
+  cursor: pointer;
+  background-color: grey;
+  color: white;
+  border-color: grey;
+}
+
 @keyframes blink {
   50% {
-    background: radial-gradient(circle, red 15%, transparent 40%), #ddd;
+    background: radial-gradient(circle, red 5%, transparent 30%), #ddd;
     background-size: 75px 150px;
   }
 }
 @-webkit-keyframes blink {
   50% {
-    background: -webkit-radial-gradient(circle, red 15%, transparent 40%), #ddd;
+    background: -webkit-radial-gradient(circle, red 5%, transparent 30%), #ddd;
   }
 }
 @-moz-keyframes blink {
   50% {
-    background: -moz-radial-gradient(circle, red 15%, transparent 40%), #ddd;
+    background: -moz-radial-gradient(circle, red 5%, transparent 30%), #ddd;
   }
 }
 .laser {
@@ -90,47 +111,47 @@
   -moz-animation: blink .9s infinite;
 }
 .brain {
-  background: radial-gradient(circle, white 15%, transparent 40%), lightgrey;
-  background: -moz-radial-gradient(circle, white 15%, transparent 40%), lightgrey;
-  background: -webkit-radial-gradient(circle, white 15%, transparent 40%), #ddd;
+  background: radial-gradient(circle, white 5%, transparent 30%), lightgrey;
+  background: -moz-radial-gradient(circle, white 5%, transparent 30%), lightgrey;
+  background: -webkit-radial-gradient(circle, white 5%, transparent 30%), #ddd;
   background-size: 75px 150px;
   height: 170px;
   width: 150px;
   border-radius: 60px 60px 10px 10px;
   border-bottom: 40px solid #666;
   position: relative;
-  left: 60px;
+  left: 55px;
 }
 .torso {
   height: 0;
   width: 260px;
   border-top: 250px solid #CCC;
   border-left: 50px solid transparent;
-  border-right: 48px solid transparent;
+  border-right: 45px solid transparent;
   border-radius: 20px 20px 75px 75px;
 }
 
 .left {
   font-family: 'Poller One', verdana, arial, sans-serif;
-  font-size: 225px;
+  font-size: 210px;
   color: #666;
   transform: rotate(200deg);
   -webkit-transform: rotate(200deg);
   -moz-transform: rotate(200deg);
   position: relative;
-  top: -312px;
+  top: -315px;
   left: -187px;
   z-index: -1;
 }
 .right {
   font-family: 'Poller One', verdana, arial, sans-serif;
-  font-size: 225px;
+  font-size: 210px;
   color: #666;
   transform: scaleY(-1) rotate(20deg);
   -webkit-transform: scaleY(-1) rotate(20deg);
   -moz-transform: scaleY(-1) rotate(20deg);
   position: relative;
-  top: -650px;
+  top: -630px;
   left: 182px;
   z-index: -1;
 }

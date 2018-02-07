@@ -14,12 +14,36 @@ $(".color").click(function() {
   var randomRGBA = 'rgba('+red+','+green+','+blue+',1)';
   //change bodys background to random colors
   $("body").css("background", randomRGBA);
-  //Display the rgba values in an alert
-  // alert(randomRGBA);
+  //Display the rgba values(alert/log?)
+  // console.log(randomRGBA);
 });
 
-  $(".moves").click(function() {
-    $("img").toggle();
+//Moves for dance button click
+// $(".dance").click(function() {
+//     if($(this).hasClass("clicked")){
+//         $(this).removeClass("clicked");
+//
+//         $(".robot").animate({left: '+=200px'});
+//     }else{
+//         $(this).addClass("clicked");
+//
+//         $(".robot").animate({left: '-=200px'});
+//       }
+//   });
+
+$(document).ready(function(){
+  $(".dance").click(function(){
+    $(".robot").animate({left: '+=300px'},"slow");
+    $(".robot").animate({left: '-=300px'},"slow");
+    $(".robot").animate({left: '-=300px'},"slow");
+    $(".robot").animate({left: '+=300px'},"slow");
+    $(".robot").animate({left: '+=300px'},"slow");
+    $(".robot").animate({left: '-=300px'},"slow");
+    $(".robot").animate({left: '-=300px'},"slow");
+    $(".robot").animate({left: '+=300px'},"slow");
+    $(".robot").animate({left: '+=300px'},"slow");
+    $(".robot").animate({left: '-=300px'},"slow");
+  });
 });
 
 //music play
