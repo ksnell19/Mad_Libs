@@ -1,174 +1,27 @@
 #body {
-
-}
-#text {
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  -webkit-text-stroke: 1px grey;
-  -webkit-text-fill-color: white; /* Will override color (regardless of order) */
-}
-
-.robot {
-  position: relative;
-  left: 650px;
-  top: 50px;
-}
-
-.beep {
-  width: 10px;
-  height: 0;
-  border: 5px solid transparent;
-  border-top: 10px solid #777;
-  border-bottom: 50px solid #888;
-  position: relative;
-  left: 125px;
-}
-
-.flash {
-    margin-top: 7%;
-    margin-left: 35%;
-   text-decoration: none;
-   text-transform: uppercase;
-   padding: 6px 24px 10px;
-   background-color: #fff;
-   color: grey;
-   border: 2px solid grey;
-   border-radius: 6px;
-   margin-bottom: 16px;
-   transition: all .5s ease;
-}
-
-.color {
-  margin-top: 7%;
-  margin-left: 15px;
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: 6px 24px 10px;
-  background-color: #fff;
-  color: grey;
-  border: 2px solid grey;
-  border-radius: 6px;
-  margin-bottom: 16px;
-  transition: all .5s ease;
-}
-
-.dance {
-  margin-top: 7%;
-  margin-left: 15px;
-  text-decoration: none;
-  text-transform: uppercase;
-  padding: 6px 24px 10px;
-  background-color: #fff;
-  color: grey;
-  border: 2px solid grey;
-  border-radius: 6px;
-  margin-bottom: 16px;
-  transition: all .5s ease;
-}
-
-/* Effect */
-.flash:hover {
-  cursor: pointer;
-  background-color: grey;
-  color: white;
-  border-color: grey;
-}
-
-.color:hover {
-  cursor: pointer;
-  background-color: grey;
-  color: white;
-  border-color: grey;
-}
-
-.dance:hover {
-  cursor: pointer;
-  background-color: grey;
-  color: white;
-  border-color: grey;
-}
-
-@keyframes blink {
-  50% {
-    background: radial-gradient(circle, red 5%, transparent 30%), #ddd;
-    background-size: 75px 150px;
+    text-align: center;
+    font-family: 'Fjalla One';
+    font-size: 20px;
+    background: #e6eaf0;
   }
-}
-@-webkit-keyframes blink {
-  50% {
-    background: -webkit-radial-gradient(circle, red 5%, transparent 30%), #ddd;
-  }
-}
-@-moz-keyframes blink {
-  50% {
-    background: -moz-radial-gradient(circle, red 5%, transparent 30%), #ddd;
-  }
-}
-.laser {
-  animation: blink .9s infinite;
-  -webkit-animation: blink .9s infinite;
-  -moz-animation: blink .9s infinite;
-}
-.brain {
-  background: radial-gradient(circle, white 5%, transparent 30%), lightgrey;
-  background: -moz-radial-gradient(circle, white 5%, transparent 30%), lightgrey;
-  background: -webkit-radial-gradient(circle, white 5%, transparent 30%), #ddd;
-  background-size: 75px 150px;
-  height: 170px;
-  width: 150px;
-  border-radius: 60px 60px 10px 10px;
-  border-bottom: 40px solid #666;
-  position: relative;
-  left: 55px;
-}
-.torso {
-  height: 0;
-  width: 260px;
-  border-top: 250px solid #CCC;
-  border-left: 50px solid transparent;
-  border-right: 45px solid transparent;
-  border-radius: 20px 20px 75px 75px;
+
+.prompt {
+  margin-top: 50px;
 }
 
-.left {
-  font-family: 'Poller One', verdana, arial, sans-serif;
-  font-size: 210px;
-  color: #666;
-  transform: rotate(200deg);
-  -webkit-transform: rotate(200deg);
-  -moz-transform: rotate(200deg);
-  position: relative;
-  top: -315px;
-  left: -187px;
-  z-index: -1;
-}
-.right {
-  font-family: 'Poller One', verdana, arial, sans-serif;
-  font-size: 210px;
-  color: #666;
-  transform: scaleY(-1) rotate(20deg);
-  -webkit-transform: scaleY(-1) rotate(20deg);
-  -moz-transform: scaleY(-1) rotate(20deg);
-  position: relative;
-  top: -630px;
-  left: 182px;
-  z-index: -1;
-}
-.foot {
-  height: 80px;
-  width: 80px;
-  background: #ddd;
-  border-radius: 40px;
-  border: 20px solid #999;
-  position: relative;
-  left: 95px;
-  top: -18px;
-  z-index: -1;
-}
-
-iframe {
-  /*visibility: hidden;
-  position: absolute;*/
-  bottom: 0;
-}
+  button {
+    margin: 30px !important;
+    cursor: pointer;
+  }
+  input {
+    font-size: 24px;
+    margin-top: 15px !important;
+  }
+  .fill {
+    background: white;
+    color: red;
+    border-bottom: 2px black solid;
+    font-family: 'Shadows Into Light';
+    padding: 0 6px;
+    margin: 4px;
+  }
